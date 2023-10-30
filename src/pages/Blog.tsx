@@ -24,11 +24,7 @@ function Blog() {
               <div className='row'>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_1.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_1.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -51,7 +47,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>
@@ -60,11 +56,7 @@ function Blog() {
                 </div>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_2.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_2.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -87,7 +79,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>
@@ -96,11 +88,7 @@ function Blog() {
                 </div>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_3.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_3.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -123,7 +111,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>
@@ -132,11 +120,7 @@ function Blog() {
                 </div>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_4.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_4.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -159,7 +143,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>
@@ -168,11 +152,7 @@ function Blog() {
                 </div>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_5.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_5.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -195,7 +175,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>
@@ -204,11 +184,7 @@ function Blog() {
                 </div>
                 <div className='col-md-12 d-flex ftco-animate'>
                   <div className='blog-entry align-self-stretch d-md-flex'>
-                    <a
-                      href='blog-single.html'
-                      className='block-20'
-                      style={{ backgroundImage: `url(images/image_6.jpg)` }}
-                    ></a>
+                    <a href='#' className='block-20' style={{ backgroundImage: `url(images/image_6.jpg)` }}></a>
                     <div className='text d-block pl-md-4'>
                       <div className='meta mb-3'>
                         <div>
@@ -231,7 +207,7 @@ function Blog() {
                         live the blind texts.
                       </p>
                       <p>
-                        <a href='blog-single.html' className='btn btn-primary py-2 px-3'>
+                        <a href='#' className='btn btn-primary py-2 px-3'>
                           Read more
                         </a>
                       </p>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function About() {
   return (
     <>
@@ -49,9 +51,9 @@ function About() {
                   they abused her for their.
                 </p>
                 <p>
-                  <a href='#' className='btn btn-primary'>
+                  <Link className='btn btn-primary' to={'/'}>
                     Shop now
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

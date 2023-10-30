@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useCart } from '../../context/cart'
+import { useAuth } from '../../context/auth/Authprovider'
 
 function AppNavbar() {
   const { totalQuantity } = useCart()
+  const { user } = useAuth()
+
   return (
     <nav className='navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light' id='ftco-navbar'>
       <div className='container'>
@@ -49,9 +52,6 @@ function AppNavbar() {
                 <Link className='dropdown-item' to='/cart'>
                   Cart
                 </Link>
-                <a className='dropdown-item' href='checkout.html'>
-                  Checkout
-                </a>
               </div>
             </li>
             <li className='nav-item'>
@@ -73,6 +73,17 @@ function AppNavbar() {
               <Link className='nav-link' to='/cart'>
                 <span className='icon-shopping_cart'></span>[{totalQuantity}]
               </Link>
+            </li>
+            <li className='nav-item'>
+              {user ? (
+                <Link className='nav-link' to={'/profile'}>
+                  <span className='icon-user'></span>
+                </Link>
+              ) : (
+                <Link className='nav-link' to={'/sign-in'}>
+                  Sign-In
+                </Link>
+              )}
             </li>
           </ul>
         </div>

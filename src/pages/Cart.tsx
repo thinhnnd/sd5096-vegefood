@@ -11,11 +11,11 @@ function Cart() {
 
   let shippingCost = 0
   let discountAmount = 0
-  let isDiscountApplied: boolean = false
-  let isShippingApplied: boolean = false
+  // let isDiscountApplied: boolean = false
+  // let isShippingApplied: boolean = false
 
   let price = totalPrice + shippingCost - discountAmount
-  const handleCheckoutSuccess = (token: any) => {
+  const handleCheckoutSuccess = () => {
     setIsPurchased(true)
     cleanCartItems()
   }

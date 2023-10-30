@@ -7,6 +7,10 @@ import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import Blog from './pages/Blog'
+import { SignUpPage } from './pages/SignUpPage'
+import { SignInPage } from './pages/SignInPage'
+import { ProfilePage } from './pages/ProfilePage'
+import { WishlistPage } from './pages/WishListPage'
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +22,10 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/wishlist' element={<WishlistPage />} />
+          <Route path='/sign-up' element={<SignUpPage />} />
+          <Route path='/sign-in' element={<SignInPage />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
