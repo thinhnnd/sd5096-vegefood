@@ -7,7 +7,7 @@ interface IProps {
 
 function CartItem({ cartItem }: IProps) {
   const { productName, sellPrice, quantity, productImageUrl } = cartItem
-  const { removeCartItem } = useCart()
+  const { removeCartItem, increaseCartItemQuantity, decreaseCartItemQuantity } = useCart()
   return (
     <>
       <tr className='text-center'>
@@ -29,14 +29,16 @@ function CartItem({ cartItem }: IProps) {
         <td className='price'>${sellPrice}</td>
 
         <td className='quantity'>
-          <div className='input-group mb-3'>
-            <input type='text' name='quantity' className='quantity form-control input-number' min='1' max='100' />
-          </div>
+          <button style={{ width: '20px' }} role='button' onClick={() => decreaseCartItemQuantity(cartItem)}>
+            &#10094;
+          </button>
+          <span className='ml-4 mr-4'>{quantity}</span>
+          <button style={{ width: '20px' }} role='button' onClick={() => increaseCartItemQuantity(cartItem)}>
+            &#10095;
+          </button>
         </td>
 
-        <td className='total'>
-          {quantity} x ${sellPrice}
-        </td>
+        <td className='total'>${quantity * sellPrice}</td>
       </tr>
     </>
   )

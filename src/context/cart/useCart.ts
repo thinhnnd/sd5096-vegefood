@@ -65,15 +65,25 @@ const useCart = () => {
   }
 
   const decreaseCartItemQuantity = (cartItemToIncrease: ICartItem) => {
-    const updatedCartItems = cartItems.map((cartItems: ICartItem) => {
+    const decreaseCartItems = cartItems.map((cartItems: ICartItem) => {
       return updateQuantitySafely(cartItems, cartItemToIncrease, -1)
     })
+
+    const updatedCartItems = decreaseCartItems.filter((x) => x.quantity > 0)
 
     setCartItems(updatedCartItems)
     const { cartTotalPrice, cartTotalQuantity } = sumCartItems(updatedCartItems)
     setTotalPrice(cartTotalPrice)
     setTotalQuantity(cartTotalQuantity)
     saveCartItemToLocalStorage(updatedCartItems)
+  }
+
+  const cleanCartItems = () => {
+    setCartItems([])
+    const { cartTotalPrice, cartTotalQuantity } = sumCartItems([])
+    setTotalPrice(cartTotalPrice)
+    setTotalQuantity(cartTotalQuantity)
+    saveCartItemToLocalStorage([])
   }
 
   return {
@@ -83,7 +93,8 @@ const useCart = () => {
     increaseCartItemQuantity,
     decreaseCartItemQuantity,
     totalPrice,
-    totalQuantity
+    totalQuantity,
+    cleanCartItems
   }
 }
 
