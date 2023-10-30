@@ -27,7 +27,7 @@
         "src/*"
       ]
     },
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
   },
   "include": [
     "src"

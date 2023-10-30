@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { createContext } from 'react'
 import { IAuthContext } from '../../models/interfaces/auth-context.interface'
-import { User } from '@auth0/auth0-react'
 import {
+  User,
   UserCredential,
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,

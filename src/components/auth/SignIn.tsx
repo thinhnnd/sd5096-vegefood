@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Input, ThemeUIStyleObject, Grid, Button, Text, Alert } from 'theme-ui'
+import { Input, ThemeUIStyleObject, Grid, Button, Text } from 'theme-ui'
 import { Form, Formik } from 'formik'
 import * as Yup from 'yup'
 import { useNavigate } from 'react-router-dom'
